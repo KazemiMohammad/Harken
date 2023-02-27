@@ -1,0 +1,52 @@
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: solid 2px powderblue;
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.row label{
+    color:rgb(9, 55, 61);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.row input{
+    font-size: medium;    
+    color:rgb(9, 55, 61);
+    height: 30px;
+    border: solid 1px rgb(9, 55, 61);
+    border-radius: 4px;
+    padding: 0 4px;
+}
+.row input:invalid{
+    border-color: crimson;
+}
+
+.row input[type="submit"]{
+background-color: powderblue;    
+font-weight: 600;
+}
+
+.error{
+    color: crimson;
+}
